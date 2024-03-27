@@ -1,0 +1,22 @@
+.Apps{
+    display: grid;
+    grid-template-columns: 350px 350px 250px;
+    margin-left: 300px;
+    padding: 20px; 
+
+}
+/* styles.css (or any other CSS file) */
+.sidebar {
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    height: 100vh;
+    background-color: #15138b;
+}
+
+.homepage {
+    flex-grow: 1;
+    margin-left: 300px; /* Adjust to match sidebar width */
+    padding: 20px; 
+}

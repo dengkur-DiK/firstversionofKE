@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/logo.png">
+  <title>Electronics Online</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .logo {
+      max-width: 250px;
+      /* Adjust logo size */
+      margin: 0 auto;
+      display: block;
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    .sidebar {
+      background-color: #8B4513;
+      /* Brown color */
+      height: 100vh;
+      /* Full height */
+      padding-top: 20px;
+      width: fit-content;
+    }
+
+    .main-content {
+      margin-left: 200px;
+      /* Sidebar width */
+      padding: 20px;
+      /* Add some padding for spacing */
+    }
+  </style>
+</head>
+
+<body class="p-3 mb-2 bg-info text-dark">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <img src="/Kurino.png" alt="Logo" class="logo">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/pages/Oppo.jsx">Oppo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/pages/Infinix.jsx">Infinix</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="root">
+        <!-- Your page content goes here -->
+      </div>
+      <script type="module" src="/src/main.jsx"></script>
+      <!-- Main content -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
