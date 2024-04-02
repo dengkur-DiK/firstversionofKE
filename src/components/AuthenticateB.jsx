@@ -1,3 +1,4 @@
+ // src/components/AuthenticationButton.js
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
@@ -16,7 +17,7 @@ const AuthenticationButton = () => {
       ) : (
         <button
           className="btn btn-primary"
-          onClick={() => loginWithRedirect({ redirect_uri: 'http://localhost:5173/pages/Airpods' })}
+          onClick={() => loginWithRedirect()}
         >
           Log In
         </button>

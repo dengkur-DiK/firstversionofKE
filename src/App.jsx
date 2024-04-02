@@ -11,7 +11,7 @@ import './components/Index.css';
 import Infinix from './pages/Infinix.jsx';
 import Oppo from './pages/Oppo';
 import { useAuth0 } from '@auth0/auth0-react';
-
+import './components/AuthenticateCom.jsx';
 const App = () => {
   const { isAuthenticated } = useAuth0();
 

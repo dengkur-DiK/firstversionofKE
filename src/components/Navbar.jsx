@@ -1,33 +1,52 @@
- // src/components/Login.js
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import LoginForm from './Loginform'; // Import the new component
+import LoginForm from './Loginform'; // Correct import statement for LoginForm
+import './Loginform.css';
 
-const Navbar= () => {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+const Navbar = () => {
+  const { isAuthenticated, user } = useAuth0();
+  const [showLoginForm, setShowLoginForm] = useState(false); // State to control login form visibility
 
-  const handleLogin = (userData) => {
-    // Handle login logic (e.g., call an API, set user state, etc.)
-    console.log('User data:', userData);
-    // For now, just log the user data
+  const toggleLoginForm = () => {
+    setShowLoginForm(!showLoginForm);
   };
 
-  if (!isAuthenticated) {
-    return (
-      <div className="center-button">
-        {/* Render the LoginForm component */}
-        <LoginForm onLogin={handleLogin} />
-      </div>
-    );
-  }
-
-  // Rest of your existing code for authenticated users
   return (
-    <div>
-      <p>Welcome, {user.name}!</p>
-      {/* Add other user-related components or navigation here */}
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <a className="navbar-brand" href="/"></a>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              {isAuthenticated && (
+                <span className="nav-link">Welcome, {user.name}!</span>
+              )}
+            </li>
+          </ul>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              {!isAuthenticated && (
+                <button
+                  className="btn btn-primary mr-2"
+                  onClick={toggleLoginForm} // Toggle login form visibility on button click
+                >
+                  Log In
+                </button>
+              )}
+            </li>
+            <li className="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+      {showLoginForm && (
+        <div>
+          <div className="login-overlay" onClick={toggleLoginForm}></div>
+          <LoginForm />
+        </div>
+      )}
+    </nav>
   );
 };
 
 export default Navbar;
+

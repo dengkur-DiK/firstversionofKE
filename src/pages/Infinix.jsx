@@ -6,9 +6,9 @@ import Card from "react-bootstrap/Card";
 const Infinix = () => {
 
     const Infinixinfo = [
-        { id: 10, image: "/hot50.jpg", title: "Infinix Hot 50", text: "This is the latest version of Infinix selling at affordable prices at Kurino electronics", price: "$230.80" },
-        { id: 11, image: "/hot40.jpg", title: "Infinix Hot 40", text: "128gb infinix 40. It is brand new with the latest features", price: "$165.95" },
-        { id: 12, image: "/smart8.jpg", title: "Infinix Smart 8", text: "The best Tekno phones exported from Nairobi, Kenya.", price: "$130.75" },
+        { id: 10, image: "/hot50.jpg", title: "Infinix Hot 50", text: "This infinix is a new phone. it is the only one left in stock. will be shipped freely. ", price: "$230.80" },
+        { id: 11, image: "/hot40.jpg", title: "Infinix Hot 40", text: "128gb infinix 40. It is brand new with the latest features. there are 5 left in the stock.", price: "$165.95" },
+        { id: 12, image: "/smart8.jpg", title: "Infinix Smart 8", text: "Infinix smart 8 is the sci-fi of the brand, with amazing features ", price: "$130.75" },
     ];
 
     const renderinfinix = (card, index) => {
