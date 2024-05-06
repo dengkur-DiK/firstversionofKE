@@ -7,7 +7,6 @@ import NoPage from './pages/NoPage';
 import Containers from './components/Containers.jsx';
 import Buttons from './components/Buttons.jsx';
 import HomePage from './components/HomePage.jsx';
-import './components/Index.css';
 import Infinix from './pages/Infinix.jsx';
 import Oppo from './pages/Oppo';
 import { useAuth0 } from '@auth0/auth0-react';
