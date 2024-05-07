@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Index.css';
+import './index.css';
 import { SearchCards } from "./SearchCards";
 import SearchResultsList from "./SearchResultsList";
 import AuthenticateB from "./AuthenticateB";
