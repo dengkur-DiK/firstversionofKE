@@ -1,0 +1,8 @@
+.App {
+    display: grid;
+    grid-template-columns: 150px 350px 350px;
+}
+.sidebar {
+    background-color: brown;
+
+}

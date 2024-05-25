@@ -1,0 +1,53 @@
+.Apps{
+    display: grid;
+    grid-template-columns: 350px 350px 250px;
+    margin-left: 300px;
+    padding: 20px; 
+
+}
+ /* Index.css */
+.homepage {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: #343a40; /* Dark background for sidebar */
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+}
+
+.sidebar .nav {
+  padding-left: 0;
+}
+
+.sidebar .nav-item {
+  list-style: none;
+}
+
+.sidebar .nav-link {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057; /* Slightly lighter background on hover */
+}
+
+.main-content {
+  margin-left: 250px; /* Same as the sidebar width */
+  padding: 20px;
+  flex: 1;
+}
